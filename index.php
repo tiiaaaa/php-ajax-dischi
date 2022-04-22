@@ -27,13 +27,17 @@ include __DIR__ . '/server/data.php';
 </head>
 <body>
     <main>
-        <div class="container p-4">
+        <div class="container d-flex flex-wrap p-4">
             <?php foreach($discs as $disc) {?>
-                <div class="card p-2">
-                    <img class="img-fluid" src="<?= $disc['post'] ?>" alt="">
-                    <h1><?= $disc['title'] ?></h1>
-                    <p><?= $disc['author'] ?></p>
-                    <p><?= $disc['date'] ?></p>
+                <div class="card text-center p-4">
+                    <div class="card-img mb-3">
+                        <img class="img-fluid" src="<?= $disc['post'] ?>" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="text-white fw-bold"><?= $disc['title'] ?></h3>
+                        <p class="m-0"><?= $disc['author'] ?></p>
+                        <p class="m-0"><?= $disc['date'] ?></p>
+                    </div>
                 </div>
             <?php } ?>
         </div>

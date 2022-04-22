@@ -1,7 +1,5 @@
 <?php 
 
-// include __DIR__ . '/controller.php';
-
 $discs = [
     [
         'post' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',

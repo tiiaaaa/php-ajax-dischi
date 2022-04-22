@@ -1,3 +1,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(57, 67, 68);
+}
+
+div.card{
+    width: calc(100% / 5);
+    background-color: rgb(69, 98, 101);
+}
+
+p{
+    font-size: 1.2rem;
+    color: rgb(165, 161, 161);
 }

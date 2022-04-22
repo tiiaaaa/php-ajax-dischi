@@ -1,3 +1,10 @@
 <?php 
 
+header('Content-Type: application/json');
+
+echo json_encode([
+    'results' => $discs,
+    'lenght' => count($discs),
+]);
+
 ?>
