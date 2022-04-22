@@ -5,9 +5,9 @@ const app = new Vue(
             discs : []
         },
         created(){
-            axios.get('').then(
+            axios.get('http://localhost/php-ajax-dischi-/server/controller.php').then(
                 result => {
-                    this.discs = result.data.result;
+                    this.discs = result.data.results;
                 }).catch((error) => {
                     console.warn(error);
                 })
