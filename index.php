@@ -26,10 +26,18 @@ include __DIR__ . '/server/data.php';
     <title>PHP Dischi</title>
 </head>
 <body>
-
-    
-
-
+    <main>
+        <div class="container p-4">
+            <?php foreach($discs as $disc) {?>
+                <div class="card p-2">
+                    <img class="img-fluid" src="<?= $disc['post'] ?>" alt="">
+                    <h1><?= $disc['title'] ?></h1>
+                    <p><?= $disc['author'] ?></p>
+                    <p><?= $disc['date'] ?></p>
+                </div>
+            <?php } ?>
+        </div>
+    </main>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
